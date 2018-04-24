@@ -17,9 +17,11 @@
 		// Make sure jQuery is being enqueued, otherwise you will need to do this.
 	
 		// Register custom scripts
+		wp_register_script( 'backstretch', '//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js', array( 'jquery' ), $theme['Version'], true); // Register script with depenancies and version in the footer
 		wp_register_script( 'pp_backstretch', get_stylesheet_directory_uri() . '/scripts/pp_backstretch.js', array( 'jquery' ), $theme['Version'], true); // Register script with depenancies and version in the footer
 	
 		// Enqueue scripts
+		wp_enqueue_script('backstretch');
 		wp_enqueue_script('pp_backstretch');
 		
 		// Add localized scripts for php variables to be used in enqueued js files
