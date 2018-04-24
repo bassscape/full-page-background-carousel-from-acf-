@@ -2,7 +2,7 @@
 	//-----------------------------------------------------
 	// [1] Required WordPress setup
 	//-----------------------------------------------------
-	//  Make sure have the Advanced custom fields plugin activated in your WordPress install.
+	//  Make sure have the Advanced Custom Fields plugin activated in your WordPress install.
 	// This code example is based on a repeater field called 'website_background_carousel'.
 	
 	
